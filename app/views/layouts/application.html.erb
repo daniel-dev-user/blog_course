@@ -15,7 +15,7 @@
 
   <body>
     <header id= "main_navigation" class="clearfix">
-      <a href="#" class= "name">Daniel Zhang</a>
+      <%= link_to "Daniel Zhang", root_path, class: "name" %>
       <nav>
       <%= link_to "Articles", posts_path %>
         <a href="contact.html">Contact</a>
@@ -25,5 +25,17 @@
 
 
     <%= yield %>
+
+    <footer id="main_footer">
+      <p class= "copyright">&copy;2016</p>
+
+      <nav>
+        <a href="https://sg.yahoo.com/?p=us" target="_blank"><i class="fa fa-facebook-official"></i></a>
+        <a href="#"><i class="fa fa-github-alt"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+
+      </nav>
+    </footer>
+
   </body>
 </html>

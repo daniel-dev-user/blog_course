@@ -1,0 +1,24 @@
+<div class="wrapper wrapper_padding clearfix">
+			<div class= "col-1 about homepage_content">
+				<h2>About Me</h2>
+				<hr>
+				<p>Try-hard deep v celiac distillery actually. Viral crucifix heirloom, irony drinking vinegar actually celiac deep v literally sartorial umami venmo.</p>
+
+				<p>Tousled banjo normcore bicycle rights chicharrones XOXO hammock. Shoreditch tacos next level, chia kale chips pour-over messenger bag.</p> 
+
+				<p>Venmo meditation gastropub, franzen cornhole semiotics cardigan ramps photo booth yr. Truffaut trust fund blue bottle, pinterest brunch pug single-origin coffee blog 90's neutra authentic farm.</p>
+
+			</div>
+
+			<div class= "col-2 homepage_content">
+				<h2>Stuff I've Written</h2>
+				<hr>
+
+				<% @post.each do |post| %>
+					<h3><a href= "#"><%= link_to post.title, post %></a></h3>
+					<p class="date"><%= post.created_at.strftime("%A, %b, %d")%></p>
+
+				<% end %>
+			</div>
+		
+		</div>
